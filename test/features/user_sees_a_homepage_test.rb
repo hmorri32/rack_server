@@ -1,7 +1,7 @@
-require './test/test_helper'
+require './test/test_helper.rb'
 
-class HomepageTest < CapybaraTestCase
-  def test_user_can_see_the_homepage
+class HomePageTest < CapybaraTestCase
+  def test_user_can_see_the_homepage 
     visit '/'
 
     assert page.has_content?("Welcome!")
